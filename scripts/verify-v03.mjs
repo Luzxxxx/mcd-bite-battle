@@ -1,0 +1,31 @@
+import assert from 'node:assert/strict';
+import { writeFile, mkdir } from 'node:fs/promises';
+import { descriptorFor } from '../web/challenge.mjs';
+import { rounds } from '../web/data.mjs';
+import { createHash } from 'node:crypto';
+const origin = process.argv[2] || 'http://127.0.0.1:4318';
+const post = async (path, body) => { const r = await fetch(origin + path, { method: 'POST', headers: { 'Content-Type': 'application/json', Origin: origin }, body: JSON.stringify(body), signal: AbortSignal.timeout(120000) }); const value = await r.json(); if (!r.ok) throw new Error(value.error || `HTTP ${r.status}`); return value; };
+const status = await (await fetch(origin + '/api/status')).json();
+assert.equal(status.byokEnabled, true);
+const plan = [{ offerId: 'chicken-fries', variantId: 'default', quantity: 1 }, { offerId: 'single-cola-m', variantId: 'default', quantity: 1 }];
+if (!process.env.DEEPSEEK_API_KEY) throw new Error('本机尚未配置模型密钥');
+const prepared = await post('/api/model/prepare', { challenge: descriptorFor(rounds[0]), profile: { service: 'deepseek', baseUrl: 'https://api.deepseek.com', model: process.env.DEEPSEEK_MODEL || 'deepseek-flash', apiKey: process.env.DEEPSEEK_API_KEY } });
+assert.equal(typeof prepared.ticket, 'string');
+assert.equal(JSON.stringify(prepared).includes(process.env.DEEPSEEK_API_KEY), false);
+const reveal = await post('/api/model/reveal', { ticket: prepared.ticket, plan, couponId: null });
+assert.equal(reveal.player.valid, true); assert.equal(reveal.opponent.valid, true);
+assert.equal(createHash('sha256').update(JSON.stringify({ plan: reveal.opponent.plan, couponId: reveal.opponent.couponId, nonce: reveal.opponentNonce })).digest('hex'), prepared.opponentCommitment);
+const report = { checkedAt: new Date().toISOString(), ownApi: { model: reveal.opponentMeta.model, quoteCount: reveal.opponentMeta.quoteCount, playerCents: reveal.player.quote.totalCents, opponentCents: reveal.opponent.quote.totalCents, commitmentVerified: true, keyAbsent: true }, live: null };
+if (status.tokenConfigured) {
+  const menu = await post('/api/live/menu', { storeCode: '1450713' });
+  const candidate = menu.meals.find(m => /麦乐鸡|薯饼|新地/.test(m.name) && !/餐|桶|分享|组合/.test(m.name));
+  if (!candidate) throw new Error('当前门店没有找到适合验证的新增单品');
+  const round = await post('/api/live/prepare', { caseId: 'menu', mealCode: candidate.code, storeCode: '1450713', opponent: 'strategy' });
+  const offer = round.catalog.offers.find(o => o.type === 'bundle');
+  const value = await post('/api/live/reveal', { roundId: round.roundId, plan: [{ offerId: offer.id, variantId: 'default', quantity: 1 }] });
+  assert.equal(value.player.valid, true); assert.equal(value.opponent.valid, true);
+  report.live = { menuEntries: menu.meals.length, categories: menu.categories, selectedMeal: candidate.name, mealCode: candidate.code, storeCode: round.round.storeCode, playerCents: value.player.quote.totalCents, opponentCents: value.opponent.quote.totalCents, quotedAt: value.player.quote.quotedAt, completeReceiptVerified: true };
+}
+await mkdir('work/validation', { recursive: true });
+await writeFile('work/validation/v03.json', JSON.stringify(report, null, 2));
+console.log(JSON.stringify(report, null, 2));
