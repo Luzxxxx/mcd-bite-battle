@@ -2,6 +2,8 @@
 
 项目仓库：https://github.com/Luzxxxx/mcd-bite-battle
 
+报名申请：[官方 Issue #809](https://github.com/M-China/mcd-developer-innovation-challenge/issues/809)。官方账号 M-China-Official 已回复[“您的作品已成功参赛”](https://github.com/M-China/mcd-developer-innovation-challenge/issues/809#issuecomment-6216025358)。
+
 ## 上传 GitHub
 
 上传这个文件夹的**内容**作为仓库根目录。打开仓库首页应直接看到 `README.md`、`CONTEST_DECLARATION.md`、`MCP_INTEGRATION.md` 和 `mcp-config.example.json`，不要再套一层项目目录。
@@ -21,13 +23,13 @@
 | 可运行源码 | `web/`、`lib/`、`server.mjs`、`worker/` |
 | WorkBuddy 专项 | 未使用，不提交虚构材料 |
 
-声明文件从官方仓库下载，未改动内容或换行。本包检查脚本核对的是 2026-10-16 的官方版本。提交前由参赛者本人阅读并确认声明与活动规则；本包没有替你提交报名或确认条款。
+声明文件从官方仓库下载，未改动内容或换行。本包检查脚本核对的是 2026-10-16 的官方版本。参赛者已在提交报名时确认同意声明与活动规则。
 
-## 报名草稿
+## 报名记录
 
-报名正文见 [SUBMISSION_DRAFT.md](SUBMISSION_DRAFT.md)，已填写项目地址。请按官方仓库的 Issue 模板提交。每个字段和值放在同一行，地址使用纯文本。
+报名简介与官方回执见 [SUBMISSION_DRAFT.md](SUBMISSION_DRAFT.md)。原申请 #808 已关闭，以 #809 为准。正文保留官方字段格式，每个字段和值放在同一行，地址使用纯文本。
 
-活动报名截止为 **2026-10-25 23:59（北京时间）**。上传项目不会自动完成报名；提交后查看官方处理结果。时间、格式和资格以[官方比赛仓库](https://github.com/M-China/mcd-developer-innovation-challenge)及[活动规则](https://github.com/M-China/mcd-developer-innovation-challenge/blob/main/activityGuidelines.md)为准。
+活动报名截止为 **2026-10-25 23:59（北京时间）**。报名成功不代表最终排名或获奖审核通过。时间、格式和资格以[官方比赛仓库](https://github.com/M-China/mcd-developer-innovation-challenge)及[活动规则](https://github.com/M-China/mcd-developer-innovation-challenge/blob/main/activityGuidelines.md)为准。
 
 ## 验收材料
 
