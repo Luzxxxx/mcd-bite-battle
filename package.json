@@ -1,0 +1,23 @@
+{
+  "name": "mcd-bite-battle",
+  "version": "0.3.2",
+  "private": true,
+  "type": "module",
+  "description": "麦麦点餐擂台：同一袋餐，挑战不同买法。",
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "test": "node --test",
+    "check": "node scripts/check.mjs",
+    "check:release": "node --env-file-if-exists=.env scripts/check-release.mjs",
+    "verify:live": "node --env-file-if-exists=.env scripts/verify-v03.mjs",
+    "mcp:probe": "node --env-file-if-exists=.env scripts/mcp-probe.mjs",
+    "build": "node scripts/build-worker.mjs"
+  },
+  "engines": {
+    "node": ">=22.9.0"
+  },
+  "packageManager": "pnpm@11.25.0",
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

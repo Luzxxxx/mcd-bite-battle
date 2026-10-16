@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.mjs text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.cmd text eol=crlf
+*.png binary
+*.jpg binary
+# Preserve the official declaration byte for byte.
+/CONTEST_DECLARATION.md -text
