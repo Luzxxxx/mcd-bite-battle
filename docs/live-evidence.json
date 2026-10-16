@@ -1,0 +1,228 @@
+{
+  "historical": true,
+  "source": "official",
+  "cases": [
+    {
+      "name": "麦香鸡中套餐",
+      "setCode": "9900005453",
+      "contents": [
+        {
+          "code": "1450",
+          "name": "麦香鸡",
+          "quantity": 1,
+          "defaultModificationSignature": "[[\"100136\",\"0-1\",1],[\"100168\",\"0-1\",1]]"
+        },
+        {
+          "code": "4810",
+          "name": "中薯条",
+          "quantity": 1,
+          "defaultModificationSignature": "[]"
+        },
+        {
+          "code": "3050",
+          "name": "可乐中杯",
+          "quantity": 1,
+          "defaultModificationSignature": "[[\"200002\",\"0-1\",1]]"
+        }
+      ],
+      "context": {
+        "storeCode": "1450713",
+        "orderType": 1,
+        "beType": 1,
+        "channel": "到店自取",
+        "coupon": "none",
+        "withOrder": false,
+        "defaultCustomizations": true
+      },
+      "canonicalEqual": true,
+      "receiptVerified": true,
+      "singleSkuMappings": [
+        {
+          "leafCode": "1450",
+          "menuProductCode": "1450"
+        },
+        {
+          "leafCode": "4810",
+          "menuProductCode": "4810"
+        },
+        {
+          "leafCode": "3050",
+          "menuProductCode": "9900008751"
+        }
+      ],
+      "setCents": 2800,
+      "singlesCents": 4050,
+      "savingCents": 1250,
+      "traces": [
+        "4aeb59f51755b11a79ae7e4476910884",
+        "9ee49985c31cf929a5509b721b7eb3a7"
+      ],
+      "checkedAt": [
+        "2026-10-15 23:48:17",
+        "2026-10-15 23:48:16"
+      ]
+    },
+    {
+      "name": "巨无霸三件套",
+      "setCode": "9900005466",
+      "contents": [
+        {
+          "code": "1100",
+          "name": "巨无霸",
+          "quantity": 1,
+          "defaultModificationSignature": "[[\"100116\",\"0-1\",1],[\"100141\",\"0-1\",1],[\"100168\",\"0-1\",1],[\"100202\",\"0-1\",1],[\"100212\",\"0-1\",1]]"
+        },
+        {
+          "code": "4810",
+          "name": "中薯条",
+          "quantity": 1,
+          "defaultModificationSignature": "[]"
+        },
+        {
+          "code": "3050",
+          "name": "可乐中杯",
+          "quantity": 1,
+          "defaultModificationSignature": "[[\"200002\",\"0-1\",1]]"
+        }
+      ],
+      "context": {
+        "storeCode": "1450713",
+        "orderType": 1,
+        "beType": 1,
+        "channel": "到店自取",
+        "coupon": "none",
+        "withOrder": false,
+        "defaultCustomizations": true
+      },
+      "canonicalEqual": true,
+      "receiptVerified": true,
+      "singleSkuMappings": [
+        {
+          "leafCode": "1100",
+          "menuProductCode": "1100"
+        },
+        {
+          "leafCode": "4810",
+          "menuProductCode": "4810"
+        },
+        {
+          "leafCode": "3050",
+          "menuProductCode": "9900008751"
+        }
+      ],
+      "setCents": 3650,
+      "singlesCents": 4900,
+      "savingCents": 1250,
+      "traces": [
+        "4247b7db8640d7e2d86428344391b580",
+        "a8732806949809d4f1f0da1b84e553fa"
+      ],
+      "checkedAt": [
+        "2026-10-15 23:48:16",
+        "2026-10-15 23:48:16"
+      ]
+    },
+    {
+      "name": "麦香鱼中套餐",
+      "setCode": "9900005460",
+      "contents": [
+        {
+          "code": "1600",
+          "name": "麦香鱼",
+          "quantity": 1,
+          "defaultModificationSignature": "[[\"100126\",\"0-1\",1],[\"100141\",\"0-1\",1]]"
+        },
+        {
+          "code": "4810",
+          "name": "中薯条",
+          "quantity": 1,
+          "defaultModificationSignature": "[]"
+        },
+        {
+          "code": "3050",
+          "name": "可乐中杯",
+          "quantity": 1,
+          "defaultModificationSignature": "[[\"200002\",\"0-1\",1]]"
+        }
+      ],
+      "context": {
+        "storeCode": "1450713",
+        "orderType": 1,
+        "beType": 1,
+        "channel": "到店自取",
+        "coupon": "none",
+        "withOrder": false,
+        "defaultCustomizations": true
+      },
+      "canonicalEqual": true,
+      "receiptVerified": true,
+      "singleSkuMappings": [
+        {
+          "leafCode": "1600",
+          "menuProductCode": "1600"
+        },
+        {
+          "leafCode": "4810",
+          "menuProductCode": "4810"
+        },
+        {
+          "leafCode": "3050",
+          "menuProductCode": "9900008751"
+        }
+      ],
+      "setCents": 3350,
+      "singlesCents": 4600,
+      "savingCents": 1250,
+      "traces": [
+        "5ab07b6ae8fa9af932d58205885775d3",
+        "80507233d7b394e961b9b7c72765e330"
+      ],
+      "checkedAt": [
+        "2026-10-15 23:48:16",
+        "2026-10-15 23:48:16"
+      ]
+    }
+  ],
+  "humanWin": {
+    "context": {
+      "storeCode": "1450713",
+      "channel": "到店自取",
+      "coupon": "none",
+      "defaultCustomizations": true
+    },
+    "target": [
+      {
+        "code": "1450",
+        "quantity": 1
+      },
+      {
+        "code": "4810",
+        "quantity": 1
+      },
+      {
+        "code": "3050",
+        "quantity": 1
+      }
+    ],
+    "playerPlan": "9900013304 (1450 + 3050) + 4810",
+    "opponentPlan": "9900005453 (default)",
+    "playerCents": 2740,
+    "opponentCents": 2800,
+    "savingCents": 60,
+    "canonicalEqual": true,
+    "receiptVerified": true,
+    "commitmentUnchanged": true,
+    "traces": [
+      "ea4e378a0024ba1452f1bc2e0ea41559",
+      "c6e539b4442cf2d10a8759cde43e5738"
+    ],
+    "checkedDate": "2026-10-15",
+    "exactQuoteTimeNotRetained": true,
+    "withOrder": false
+  },
+  "availability": {
+    "checkedAt": "2026-10-16 00:00:57 Asia/Shanghai",
+    "code": 600057,
+    "message": "门店可能已关闭或不在营业时间"
+  }
+}

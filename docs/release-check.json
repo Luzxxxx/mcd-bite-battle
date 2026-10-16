@@ -1,0 +1,184 @@
+{
+  "version": "0.3.2",
+  "checkedAt": "2026-10-16T06:57:50.5633839Z",
+  "sourceCommit": "453aee66266d3c489a4f0c2f9c757610c97d1eab",
+  "runtime": {
+    "os": "Windows",
+    "node": "24.19.0",
+    "pnpm": "11.25.0",
+    "esbuild": "0.28.2"
+  },
+  "automatedTests": {
+    "passed": 45,
+    "failed": 0,
+    "skipped": 0,
+    "externalServices": false
+  },
+  "syntax": "passed, including server entry",
+  "cleanStartup": {
+    "envFileInPackage": false,
+    "server": "passed",
+    "runtimeDependencies": 0,
+    "servedAssets": 7,
+    "hostAndOriginChecks": "passed",
+    "secretFileNotServed": true,
+    "missingMcpHandled": true,
+    "windowsLauncher": "ordinary Windows PATH without system Node: Codex runtime fallback, directory-independent startup and repeated launch reuse passed"
+  },
+  "worker": {
+    "frozenInstall": "passed",
+    "buildWithoutOriginalSiteManifest": "passed",
+    "embeddedAssets": 7,
+    "fetchHandler": "passed",
+    "invalidInputAndCrossOrigin": "passed",
+    "noMcpMode": true,
+    "noTicketKeyDisablesModelMode": true,
+    "publishedWebsite": "not tested in this package audit"
+  },
+  "integration": {
+    "checkedAt": "2026-10-16T06:41:38.644Z",
+    "ownApi": {
+      "model": "deepseek-flash",
+      "quoteCount": 2,
+      "playerCents": 2590,
+      "opponentCents": 2590,
+      "commitmentVerified": true,
+      "keyAbsent": true
+    },
+    "live": {
+      "menuEntries": 121,
+      "categories": [
+        "巨无霸\n牛鱼肉堡",
+        "炸鸡",
+        "鸡肉汉堡\n/卷",
+        "饮品",
+        "小食甜品\n/其他",
+        "麦咖啡™",
+        "安格斯MAX\n厚牛堡",
+        "人气热卖",
+        "蘸酱炸鸡",
+        "小食拼盘\n/多人餐",
+        "精选单人餐",
+        "随心配\n1+1",
+        "500\n大卡套餐",
+        "大堡口福\n单人餐",
+        "开心乐园"
+      ],
+      "selectedMeal": "麦乐鸡",
+      "mealCode": "1401",
+      "storeCode": "1450713",
+      "playerCents": 1400,
+      "opponentCents": 1400,
+      "quotedAt": "2026-10-16 14:41:56",
+      "completeReceiptVerified": true
+    }
+  },
+  "liveVisitorModel": {
+    "checkedAt": "2026-10-16T06:57:15.714Z",
+    "source": "real official MCP and visitor DeepSeek profile through independent folder server",
+    "storeCode": "1450713",
+    "mealCode": "1401",
+    "model": "deepseek-flash",
+    "quoteCount": 2,
+    "playerCents": 1400,
+    "opponentCents": 1400,
+    "quotedAt": "2026-10-16 14:57:28",
+    "commitmentVerified": true,
+    "completeReceiptVerified": true,
+    "keyAbsent": true
+  },
+  "browser": {
+    "checkedAt": "2026-10-16T06:56:27.353Z",
+    "source": "independent release folder, local Node servers",
+    "trainingWin": {
+      "playerCents": 2590,
+      "opponentCents": 2990
+    },
+    "wrongSizeRejected": true,
+    "sharing": {
+      "usesCurrentOrigin": true,
+      "receiverRecomputedBenchmark": true,
+      "friendCents": 2590
+    },
+    "customCoffeePieTie": true,
+    "pngExport": true,
+    "mobileDrawerAndQuantity": true,
+    "mobileLockAndReveal": true,
+    "responsive": [
+      {
+        "noOverflow": true,
+        "width": 320
+      },
+      {
+        "noOverflow": true,
+        "width": 390
+      },
+      {
+        "noOverflow": true,
+        "width": 760
+      },
+      {
+        "noOverflow": true,
+        "width": 900
+      },
+      {
+        "noOverflow": true,
+        "width": 1440
+      }
+    ],
+    "realDeepseekUi": {
+      "model": "deepseek-flash",
+      "playerCents": 2590,
+      "opponentCents": 2590,
+      "quoteCount": 2,
+      "commitmentVerified": true,
+      "source": "real DeepSeek API via server environment shortcut; fictional training prices"
+    },
+    "browserErrors": []
+  },
+  "officialDeclaration": {
+    "source": "https://raw.githubusercontent.com/M-China/mcd-developer-innovation-challenge/main/CONTEST_DECLARATION.md",
+    "sha256": "cd28101bcb29cc8fb24b372fe91ce6b42c4a1487a54e01f7ade0c8c6a84241b7",
+    "bytesUnchanged": true,
+    "verifiedDate": "2026-10-16"
+  },
+  "publication": {
+    "githubUploaded": false,
+    "registrationSubmitted": false,
+    "workbuddyUsed": false
+  },
+  "limits": [
+    "Only DeepSeek was tested with a real model account; other provider configurations have fixture tests.",
+    "Official menu availability and prices vary by store and time; some nested selections are rejected.",
+    "The Node server binds loopback; cross-device sharing needs each receiver to run a copy or a separate hosted deployment.",
+    "Worker build and handler checks do not verify a public deployment.",
+    "Local browser QA covered Codex in-app Chromium; this audit did not run every OS and browser."
+  ],
+  "packageIntegrity": {
+    "filesIncludingManifest": 75,
+    "sensitiveValuesChecked": 2,
+    "requiredFilesAndLocalReferences": "passed",
+    "pythonQaScriptSyntax": "passed",
+    "secretsAndOriginalHostingIdentityExcluded": true,
+    "gitLineEndings": "LF text, CRLF Windows launcher, unchanged official declaration"
+  },
+  "launcherFollowup": {
+    "checkedAt": "2026-10-16T08:02:57.897Z",
+    "source": "ordinary Windows user and machine PATH, outside project directory",
+    "systemNodeAbsent": true,
+    "codexRuntimeFallback": true,
+    "serverReady": true,
+    "repeatedLaunchReusedServer": true,
+    "secretsRequired": false,
+    "browserLaunchSuppressedForAutomatedCheck": true
+  },
+  "githubPreparation": {
+    "readmeSkills": [
+      "crafting-effective-readmes",
+      "writing-clearly-and-concisely"
+    ],
+    "metadataPrepared": true,
+    "mandatoryFilesPreserved": true,
+    "uploaded": false
+  }
+}

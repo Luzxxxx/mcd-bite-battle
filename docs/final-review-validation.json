@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-10-16T05:38:12.336Z",
+  "automatedTests": {
+    "passed": 45,
+    "failed": 0
+  },
+  "browser": {
+    "clearWhilePreparing": "passed; completed old response did not restore profile",
+    "reopenAfterClear": "empty key; passed",
+    "switchDuringReveal": "new round kept, old result hidden; passed",
+    "normalReveal": "tie with verified original plan; passed",
+    "mobile390": "no horizontal overflow; passed",
+    "consoleErrors": []
+  },
+  "source": "local page with fake keys and mocked provider; production ticket protocol",
+  "realServicesCalled": false,
+  "onlineModelVerification": "still unverified after previous platform HTTP 403"
+}

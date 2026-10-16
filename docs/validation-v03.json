@@ -1,0 +1,77 @@
+{
+  "checkedAt": "2026-10-16T02:20:50.407Z",
+  "ownApi": {
+    "model": "deepseek-flash",
+    "quoteCount": 1,
+    "playerCents": 2590,
+    "opponentCents": 2990,
+    "commitmentVerified": true,
+    "keyAbsent": true
+  },
+  "live": {
+    "menuEntries": 88,
+    "categories": [
+      "饮品",
+      "麦满分系列",
+      "小食甜品\n/其他",
+      "炒双蛋堡\n系列",
+      "麦咖啡™",
+      "人气热卖",
+      "早安营养卷",
+      "粥王系列",
+      "超值早餐",
+      "厚松饼堡\n系列",
+      "6折起\n早餐卡专区",
+      "一早现磨"
+    ],
+    "selectedMeal": "脆薯饼",
+    "mealCode": "4825",
+    "storeCode": "1450713",
+    "playerCents": 850,
+    "opponentCents": 850,
+    "quotedAt": "2026-10-16 10:21:06",
+    "completeReceiptVerified": true
+  },
+  "browser": {
+    "checkedAt": "2026-10-16T05:09:33.977Z",
+    "ownApiUi": "passed with fixture provider and fake key; production ticket protocol",
+    "ownApiRevealCommitment": true,
+    "clearKey": true,
+    "newFoodCustomAndShare": "passed",
+    "responsiveViewports": [
+      320,
+      390,
+      760,
+      900,
+      1440
+    ],
+    "mobileBreakfast": "passed: 30.90 teaching yuan; win against strategy",
+    "officialUi": {
+      "storeCode": "1450713",
+      "menuEntries": 118,
+      "selectedMeal": "麦乐鸡套餐",
+      "mealCode": "9900004835",
+      "playerCents": 2500,
+      "opponentCents": 2500,
+      "source": "official MCP via local Node",
+      "originalCommitmentVerified": true
+    },
+    "browserErrors": []
+  },
+  "automatedTests": {
+    "passed": 45,
+    "failed": 0
+  },
+  "workerLocal": {
+    "assets": true,
+    "status": true,
+    "crossOriginRejected": true,
+    "bodyLimit": 32768,
+    "built": true
+  },
+  "limits": [
+    "Only DeepSeek was tested against a real model account; other providers validated with fixtures and configuration checks.",
+    "Some official nested selections or unresolvable leaf SKUs are rejected; menu visibility is not a guarantee of challenge support.",
+    "All prices are historical observations from the stated store and time."
+  ]
+}

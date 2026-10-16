@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-10-16T06:56:27.353Z",
+  "source": "independent release folder, local Node servers",
+  "trainingWin": {
+    "playerCents": 2590,
+    "opponentCents": 2990
+  },
+  "wrongSizeRejected": true,
+  "sharing": {
+    "usesCurrentOrigin": true,
+    "receiverRecomputedBenchmark": true,
+    "friendCents": 2590
+  },
+  "customCoffeePieTie": true,
+  "pngExport": true,
+  "mobileDrawerAndQuantity": true,
+  "mobileLockAndReveal": true,
+  "responsive": [
+    {
+      "noOverflow": true,
+      "width": 320
+    },
+    {
+      "noOverflow": true,
+      "width": 390
+    },
+    {
+      "noOverflow": true,
+      "width": 760
+    },
+    {
+      "noOverflow": true,
+      "width": 900
+    },
+    {
+      "noOverflow": true,
+      "width": 1440
+    }
+  ],
+  "realDeepseekUi": {
+    "model": "deepseek-flash",
+    "playerCents": 2590,
+    "opponentCents": 2590,
+    "quoteCount": 2,
+    "commitmentVerified": true,
+    "source": "real DeepSeek API via server environment shortcut; fictional training prices"
+  },
+  "browserErrors": []
+}

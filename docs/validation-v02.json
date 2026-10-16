@@ -1,0 +1,74 @@
+{
+  "version": "0.2.0",
+  "historical": true,
+  "tests": {
+    "passed": 34,
+    "failed": 0,
+    "javascriptSyntax": "passed",
+    "skillStructure": "passed",
+    "pythonSyntax": "passed"
+  },
+  "browser": {
+    "checkedAt": "2026-10-15T16:33:07.027118+00:00",
+    "desktop": "passed",
+    "mobileDrawerAndDock": "passed",
+    "responsiveWidths": [
+      320,
+      390,
+      760,
+      900,
+      1440
+    ],
+    "trainingWinAndTie": "passed",
+    "wrongSizeRejected": true,
+    "customRound": "passed",
+    "shareBenchmarkAndCustom": "passed",
+    "pngExport": "passed",
+    "storeSelectionAndClosedRecovery": "passed with fixtures",
+    "realDeepSeek": {
+      "status": "passed",
+      "source": "real DeepSeek API, fictional training prices",
+      "meta": {
+        "kind": "llm",
+        "name": "DeepSeek",
+        "model": "deepseek-flash",
+        "quoteCount": 1,
+        "summary": "已试算 1 次，提交其中一份通过同餐与预算校验的方案。"
+      },
+      "playerCents": 2590,
+      "opponentCents": 2990,
+      "playerValid": true,
+      "opponentValid": true,
+      "uiCommitmentVerified": true
+    },
+    "browserErrors": [],
+    "credentialsAbsentFromBrowser": true
+  },
+  "officialIntegration": {
+    "status": "passed",
+    "storeCode": "1450713",
+    "storeName": "麦当劳上海黄浦华旭国际大厦餐厅",
+    "source": "official",
+    "opponent": {
+      "kind": "llm",
+      "name": "DeepSeek",
+      "model": "deepseek-flash",
+      "quoteCount": 1,
+      "summary": "已试算 1 次，提交其中一份通过同餐与预算校验的方案。"
+    },
+    "valid": true,
+    "playerCents": 2800,
+    "opponentCents": 2800,
+    "canonicalEqual": true,
+    "receiptVerified": true,
+    "traces": [
+      "9770797e2e7d0c28620bb5e2a3c1abb0",
+      "9347ed53a3b9827fb51860d46b692249"
+    ],
+    "quotedAt": [
+      "2026-10-16 00:33:39",
+      "2026-10-16 00:33:38"
+    ]
+  },
+  "verificationBoundary": "Browser store selection errors used fixtures; officialIntegration is the separate actual service run. No order, payment or account mutations."
+}
