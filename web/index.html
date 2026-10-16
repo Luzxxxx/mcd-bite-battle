@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#b73326">
+  <meta name="description" content="配齐同一袋餐，用套餐、单点和优惠券与 AI 比价。">
+  <title>麦麦点餐擂台 · 同一袋餐，换你赢</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#arena">跳到挑战区域</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="麦麦点餐擂台首页"><span class="brand-mark">B<span>×</span>B</span><span class="brand-text">麦麦点餐擂台<small>BITE BATTLE CLUB</small></span></a>
+    <div class="header-right"><button class="data-badge" id="data-info"><span></span>演示训练场</button><button class="text-button" id="rules-open">怎么玩 <span>↗</span></button></div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span class="tiny-star">✦</span> 单人挑战 · 你 VS AI</p><h1 id="hero-title">同一袋餐。<br>换你，<span class="highlight">赢过 AI。</span></h1><p class="hero-description">餐品一样，买法随你。<br>搭套餐、选优惠，比比谁花得少。</p><a class="primary-button" href="#arena" id="hero-start">开始一局 <span>↘</span></a><span class="hero-note">单人可玩 · 无需注册</span></div>
+      <div class="hero-art" aria-hidden="true"><div class="art-orbit"></div><span class="orbit-word">SAME FOOD. BETTER MOVE.</span><div class="receipt receipt-back"><span>YOUR NEXT MOVE</span><div class="receipt-dashes"></div><strong>?</strong></div><div class="hero-food" id="hero-food"></div><div class="art-sticker sticker-yellow">同样的餐品<br><b>不同的买法</b></div><div class="art-sticker sticker-white"><span>READY TO</span><b>OUTSMART?</b><i>↗</i></div><span class="art-spark spark-one">✳</span><span class="art-spark spark-two">✦</span></div>
+    </section>
+
+    <div class="ticker" aria-hidden="true"><div>同袋对决 <span>✦</span> 杯型也算数 <span>✦</span> 少一份不算赢 <span>✦</span> 同餐比价 <span>✦</span> SAME BAG, BETTER MOVE <span>✦</span> 同袋对决 <span>✦</span> 杯型也算数 <span>✦</span></div></div>
+
+    <section class="arena-section" id="arena" aria-labelledby="arena-title">
+      <div class="section-heading"><div><p class="eyebrow">选一局</p><h2 id="arena-title">这餐怎么点？</h2></div><div class="section-actions"><button class="text-button" id="share-challenge">邀请朋友 ↗</button><button class="text-button" id="custom-open">自己出题 ＋</button></div></div>
+      <div class="invitation-banner" id="invitation-banner" hidden role="status"></div>
+      <div class="round-tabs" id="round-tabs" aria-label="选择挑战"></div>
+      <div class="challenge-brief"><div class="brief-title"><span class="round-stamp" id="round-stamp">ROUND 01</span><h3 id="round-title"></h3><p id="round-description"></p></div><div class="target-bag" id="target-bag" aria-label="本局必须收到的餐品"></div><div class="budget"><small>本局预算</small><strong id="budget-number"></strong><span>餐品、份数、规格要一致</span></div></div>
+
+      <div class="arena-grid">
+        <section class="menu-panel" aria-labelledby="menu-title"><div class="panel-heading"><h3 id="menu-title">出招区 <span>先看本局推荐</span></h3><div class="filter-tabs" aria-label="筛选菜单"><button data-filter="all" class="active" aria-pressed="true">全部</button><button data-filter="bundle" aria-pressed="false">套餐 / 双拼</button><button data-filter="single" aria-pressed="false">单点</button></div></div><label class="category-label">餐品分类 <select id="menu-category" aria-label="按餐品分类"></select></label><div class="offer-grid" id="offer-grid"></div><button class="menu-expand" id="menu-expand">展开完整菜单 ↓</button><p class="menu-footnote">示意图与示例价格，非门店报价。</p></section>
+        <aside class="battle-panel" aria-label="你的餐单与对手">
+          <div id="cart-home"><div class="player-card"><div class="player-header"><span class="player-avatar">你</span><div><h3>你</h3><span>套餐、单点，自己搭。</span></div><button class="clear-button" id="cart-clear">清空</button></div><div class="cart-lines" id="cart-lines"></div><div class="bag-check" id="bag-check" aria-live="polite"></div><div class="coupon-area" id="coupon-area"></div><div class="price-row"><div><span>示例合计</span><small id="discount-label"></small></div><strong id="cart-price">¥0.00</strong></div><button class="primary-button submit-button" id="submit-plan">锁定餐单 <span>↗</span></button><div class="secondary-actions"><button id="hint-button">看提示</button><button id="bag-inspect">核对餐袋 ↗</button></div></div></div>
+          <div class="opponent-card"><div class="opponent-avatar" aria-hidden="true"><span></span><span></span><i></i></div><div class="opponent-info"><div><h3 id="opponent-name"></h3><span class="sealed-badge">已出招</span></div><p id="opponent-line"></p></div><div class="sealed-price">¥ <span>••.••</span></div><div class="opponent-actions"><button class="opponent-explainer" id="opponent-info">对手说明 ↗</button><button class="opponent-explainer" id="opponent-switch">用自己的 AI ↗</button></div></div>
+        </aside>
+      </div>
+      <div class="how-strip"><span><b>01</b> 看目标餐品</span><i>→</i><span><b>02</b> 配齐这一餐</span><i>→</i><span><b>03</b> 锁定后翻牌</span><p>餐品一致才比价。</p></div>
+    </section>
+
+    <section class="result-section" id="result-section" hidden aria-labelledby="result-title"></section>
+
+    <section class="principles"><div class="principle-title"><span>PLAY FAIR.<br>EAT HAPPY.</span><p>一样的餐，才好比价。</p></div><div><b>餐品一致</b><p>品种、份数、规格和配料<br>都要相同。</p></div><div><b>条件相同</b><p>双方使用同一份菜单<br>和本局可用优惠。</p></div><div><b>价格有来源</b><p>训练局用示例价。<br>真实局按门店整单核价。</p></div></section>
+  </main>
+  <footer><a class="footer-brand" href="#">BITE BATTLE CLUB <span>✦</span></a><p>独立参赛作品，非麦当劳官方产品。训练价仅作示例。</p></footer>
+
+  <dialog id="info-dialog" aria-labelledby="dialog-title"><div class="dialog-header"><h2 id="dialog-title"></h2><button id="dialog-close" class="icon-button" aria-label="关闭对话框">×</button></div><div id="dialog-content"></div></dialog>
+  <dialog id="cart-dialog" class="cart-dialog" aria-labelledby="cart-dialog-title"><div class="dialog-header"><h2 id="cart-dialog-title">你的餐单</h2><button id="cart-dialog-close" class="icon-button" aria-label="收起餐袋">×</button></div><div id="cart-dialog-content"></div></dialog>
+  <div class="mobile-dock" id="mobile-dock" hidden aria-label="餐袋与出招"><button class="dock-bag" id="dock-bag"><span class="dock-bag-icon">▱<b id="dock-count">0</b></span><span><strong id="dock-price">¥0.00</strong><small id="dock-status">点餐品旁的＋</small></span></button><button class="primary-button" id="dock-submit">先选餐品 ↗</button></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>
