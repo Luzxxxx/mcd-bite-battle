@@ -114,4 +114,4 @@ node --env-file-if-exists=.env scripts/verify-v03.mjs
 
 本项目是独立参赛作品，非麦当劳官方产品。训练价格与优惠券为虚构教学数据，真实价格和供应以官方当次结果为准。
 
-按[官方比赛要求](https://github.com/M-China/mcd-developer-innovation-challenge)提供 `README.md`、原样 `CONTEST_DECLARATION.md`、`MCP_INTEGRATION.md`、仅含环境变量占位符的 `mcp-config.example.json` 和完整源码。未使用 WorkBuddy，未申报其专项奖励。材料对应与报名格式见 [提交说明](docs/SUBMISSION.md)。
+按[官方比赛要求](https://github.com/M-China/mcd-developer-innovation-challenge)提供 `README.md`、原样 `CONTEST_DECLARATION.md`、`MCP_INTEGRATION.md`、仅含环境变量占位符的 `mcp-config.example.json` 和完整源码。材料对应与报名格式见 [提交说明](docs/SUBMISSION.md)。
