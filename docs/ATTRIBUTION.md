@@ -14,6 +14,7 @@
 - Codex 的 Sites skill 用于网站交付流程，skill-creator 用于项目 Skill 编写与验证。它们是开发工作流工具，不是本产品的运行时依赖。
 - [crafting-effective-readmes](https://github.com/softaworks/agent-toolkit/tree/main/skills/crafting-effective-readmes) 与 [writing-clearly-and-concisely](https://github.com/softaworks/agent-toolkit/tree/main/skills/writing-clearly-and-concisely)：用于 README 结构与文字精简，未复制它们的模板内容或代码。
 - [麦麦多快好省](https://github.com/Michael-4753/mcd-skill)、[麦麦点餐管家](https://github.com/CBTdao/mcd-order-buddy)和[麦麦最优解](https://github.com/YuchanHu/McOptimize)：参照其项目定位、使用场景与验证材料的组织方式，结合本项目已实现的玩法重写介绍。
+- [麦门省钱精算师](https://github.com/hujjun/mcd-saver-strategist)：2026-10-19 按用户提供的参考，借鉴其 README 中项目介绍、问题说明、架构、使用示例、验证依据与目录结构的组织方式；文案按本项目实际功能重新撰写，未复制其代码、图片或功能结论。
 
 借鉴的是“观众亲自操作、即时反馈、最后揭晓、结果可分享”的交互方法。当前文档不声称某个未核实的字节赛事作品是获奖作品，也没有复刻他人具体作品。
 
